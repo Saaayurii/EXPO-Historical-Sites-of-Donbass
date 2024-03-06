@@ -13,7 +13,7 @@ export default function WelcomeScreen() {
       
       {/* background image */}
       <Image 
-        source={require('../../assets/images/welcome.png')}
+        source={require('../../assets/images/welcome2.jpg')}
         className="h-full w-full absolute"
       />
 
@@ -27,13 +27,13 @@ export default function WelcomeScreen() {
             className="absolute bottom-0"
         />
         <View className="space-y-3">
-            <Text className="text-white font-bold text-5xl" style={{fontSize: wp(10)}}>Traveling made easy!</Text>
+            <Text className="text-white font-bold text-5xl" style={{fontSize: wp(10)}}>Донецк это круто!</Text>
             <Text className="text-neutral-200 font-medium" style={{fontSize: wp(4)}}>
-                Experience the world's best adventure around the world with us
+                Приложение для путешествия по историческим местам Донецка
             </Text>
         </View>
         <TouchableOpacity onPress={()=> navigation.navigate("Home")} style={{backgroundColor: theme.bg(1)}} className="mx-auto p-3 px-12 rounded-full">
-            <Text className="text-white font-bold" style={{fontSize: wp(5.5)}}>Let's go!</Text>
+            <Text className="text-white font-bold" style={{fontSize: wp(5.5)}}>Идем!</Text>
         </TouchableOpacity>
         
       </View>

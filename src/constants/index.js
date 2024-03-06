@@ -1,76 +1,265 @@
-export const sortCategoryData = ['All', 'Popular', 'Recommended', 'More'];
+export const sortCategoryData = ['Все', 'Популярные']
 
 export const categoriesData = [
-    {
-        title: 'Ocean',
-        image: require('../../assets/images/ocean.png')
-    },
-    {
-        title: 'Mountain',
-        image: require('../../assets/images/mountain.png')
-    },
-    {
-        title: 'Camp',
-        image: require('../../assets/images/camp.png')
-    },
-    {
-        title: 'Sunset',
-        image: require('../../assets/images/sunset.png')
-    },
-    {
-        title: 'Hiking',
-        image: require('../../assets/images/hiking.png')
-    },
-    {
-        title: 'Beach',
-        image: require('../../assets/images/beach.png')
-    },
-    {
-        title: 'Forest',
-        image: require('../../assets/images/forest.png')
-    },
-    
+	{
+		title: 'Парки',
+		image: require('../../assets/images/park3.jpg'),
+	},
+	{
+		title: 'Соборы',
+		image: require('../../assets/images/sobor2.jpg'),
+	},
+	{
+		title: 'Театры',
+		image: require('../../assets/images/teatr.jpg'),
+	},
+	{
+		title: 'Дома',
+		image: require('../../assets/images/home.jpg'),
+	},
+	{
+		title: 'Искусство',
+		image: require('../../assets/images/iskus.jpg'),
+	},
 ]
 export const destinationData = [
-    {
-        title: 'Osaka Castle',
-        duration: '12 Days',
-        distance: '400 KM',
-        weather: '20 C',
-        price: 1200,
-        shortDescription: "Osaka Castle is a Japanese castle in Chūō-ku, Osaka, Japan. The castle is one of Japan's most famous landmarks.",
-        longDescription: "Osaka Castle is a Japanese castle in Chūō-ku, Osaka, Japan. The castle is one of Japan's most famous landmarks and it played a major role in the unification of Japan during the sixteenth century of the Azuchi-Momoyama period.",
-        image: require('../../assets/images/hotel.png')
-    },
-    {
-        title: 'Island Itsukushima Shrine',
-        duration: '7 Days',
-        distance: '450 KM',
-        weather: '30 C',
-        price: 3000,
-        shortDescription: "The Itsukushima shrine is one of Japan's most popular tourist attractions.",
-        longDescription: "Itsukushima Shrine is a Shinto shrine on the island of Itsukushima, best known for its 'floating' torii gate. It is in the city of Hatsukaichi in Hiroshima Prefecture in Japan, accessible from the mainland by ferry at Miyajimaguchi Station.",
-        image: require('../../assets/images/island.png')
-    },
-    
-    {
-        title: 'Babusar Top',
-        duration: '5 Days',
-        distance: '299 KM',
-        weather: '14 C',
-        price: 1000,
-        shortDescription: "Babusar Top is a mountain pass in Pakistan at the north of the 150 km long in beautiful Kaghan Valley",
-        longDescription: "Babusar Pass or Babusar Top is a mountain pass in Pakistan at the north of the 150 km long Kaghan Valley, connecting it via the Thak Nala with Chilas on the Karakoram Highway. It is the highest point in Kaghan Valley that can be easily accessed by cars.",
-        image: require('../../assets/images/camp.png')
-    },
-    {
-        title: 'Todaiji Temple',
-        duration: '20 Days',
-        distance: '604 KM',
-        weather: '34 C',
-        price: 400,
-        shortDescription: "Todaiji is one of Japan's most famous and significant temples and a landmark of Nara.",
-        longDescription: "Tōdai-ji is a Buddhist temple complex that was once one of the powerful Seven Great Temples, located in the city of Nara, Japan. Though it was originally founded in the year 738 CE, Tōdai-ji was not opened until the year 752 CE.",
-        image: require('../../assets/images/forest.png')
-    },
+	{
+		id: 2,
+		title: 'Собор',
+		category: "Соборы",
+		duration: 'Пн-Вс',
+		distance: '400 KM',
+		weather: '8.00-19.00',
+		price: 1200,
+		url: 'https://yandex.ru/maps/org/spaso_preobrazhenskiy_kafedralny_sobor/1032867076/',
+		shortDescription:
+			'На Соборной площади города Донецка стоит Спасо-Преображенский собор, который был открыт в 2006 году.',
+		longDescription:
+			'Собор с 1883 года несколько раз разрушался и заново отстраивался. Последнее строительство храма затянулось на девять лет. Сегодня это не только место поклонение, но и исторический памятник Донбасса.  В соборе хранится икона Николая Чудотворца 19 века и Новодворская икона Божьей Матери.',
+		image: require('../../assets/images/sobor.jpg'),
+	},
+	{
+		id: 2,
+		title: 'Музыкальный театр',
+		category: "Театры",
+		duration: 'Пн-Вс',
+		distance: '400 KM',
+		weather: '8.00-20.00',
+		price: 1200,
+		url: 'https://yandex.ru/maps/org/donetskiy_gosudarstvenny_akademicheskiy_muzykalno_dramaticheskiy_teatr_imeni_m_m_brovuna/1098209480/?ysclid=ls7um3vtul658220862',
+		shortDescription:
+			'Белокаменный музыкально-драматический театр на ул. Артема.',
+		longDescription:
+			'Гордость города. В 1961 году театр открыл двери для зрителей. В театре есть шесть сценических площадок: основная и малая сцены, красный зал, театральная гостиная, экспериментальная и новая сцена. В репертуаре отечественные и зарубежные пьесы, премьеры мировой драматургии, детские спектакли, современные постановки.',
+		image: require('../../assets/images/teatr2.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Парк',
+		category: "Парки",
+		duration: 'Пн-Вс',
+		distance: '450 KM',
+		weather: '∞',
+		price: 3000,
+		url: 'https://yandex.ru/maps/org/tsentralny_park_kultury_i_otdykha_imeni_a_s_shcherbakova/87267900408/',
+		shortDescription:
+			'Парк расположен в Ворошиловском районе построенный в 1931 году и считается визиткой города.',
+		longDescription:
+			'В самом центре парка установлена мраморная стела «Добрый ангел мира». На площади 62 гектара разместились дельфинарий, лодочная станция и аквапарк. Для самых маленьких посетителей обустроены детские городки с батутами, каруселями и кафе. Японский сад в парке уютное и тихое место с мини водопадом и искусственными прудами. В парковой зоне есть много фонтанов, кованых беседок и клумб с розами.',
+		image: require('../../assets/images/park2.jpg'),
+	},
+
+	{
+		id: 2,
+		title: 'Аквапарк',
+		category:  "Парки",
+		duration: 'Сб-Вс',
+		distance: '299 KM',
+		weather: '10.00-18.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/vodny_kompleks_akvapark_akvasferra/227604228680/',
+		shortDescription:
+			'«Аквасфера» — развлекательный центр Донбасса, построенный в 2012 году,вмещает до 500 посетителей.',
+		longDescription:
+			'Аквапарк вмещает до 500 посетителей и имеет раздвижной купол. В парке есть шесть горок разной сложности вертикальные и спиральные. Самый большой аттракцион 25 метров в высоту и 85 метров в длину. В аквапарке есть бассейн с пляжем, сауна и джакузи. В центре можно проводить детские и корпоративные праздники, а так же дни рожденья для этого работают аниматоры.',
+		image: require('../../assets/images/aqua2.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Оперный театр',
+		category:  "Театры",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '10.00-18.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/donetskiy_gosudarstvenny_akademicheskiy_teatr_opery_i_baleta_imeni_a_b_solovyanenko/1221931539/',
+		shortDescription:
+			'Донецкий оперный театр был открыт в 1941 году на ул.Артема.',
+		longDescription:
+			'Здание было построено в классическом архитектурном стиле высотой 30 метров. Зрительный зал с позолоченной лепниной насчитывает 970 мест. Фойе театра оформлено декоративными вазами и бюстами знаменитостей. В репертуаре театра оперетты, детские спектакли  и концерты.',
+		image: require('../../assets/images/operniteatr.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Краеведческий музей',
+		category:  "Театры",
+		duration: 'Ср-Вс',
+		distance: '299 KM',
+		weather: '8.00-17.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/donetskiy_respublikanskiy_krayevedcheskiy_muzey/1116296039/?ysclid=ls7v0l2xwk756976553',
+		shortDescription:
+			'Музей расположен на ул. Челюскинцев и открыт с 1924 года.',
+		longDescription:
+			'В культурном комплексе выставлено 150 тысяч предметов. Экспозиция охватывает все исторические моменты Донецка. В музейных залах расположились археологические экспонаты, книги и иконы 18 века, коллекция монет. Отдельный выставочный зал рассказывает о природе края. В стенах музея проходят патриотические лекции для школьников. Экспозиция Великой Отечественной войны занимает центральное место здесь показывают инсталляции боевых действий.',
+		image: require('../../assets/images/kraev.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Монумент “Царь-пушка”',
+		category:  "Искусство",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/tsar_pushka/114039343501/',
+		shortDescription:
+			'Возле проспекта Мира в небольшом сквере установлена «Царь-пушка» подарок из Москвы жителям Донецка.',
+		longDescription:
+			'Копия монумента сделана из чугуна Ижевскими мастерами. Возле пушки четыре ядра весом каждый около тонны. Сама пушка внушительных размеров так окружность дула 120 см а длина ствола 5 метров. Во время установки памятника все элементы собирались строительным краном, так как общая масса изделия до 40 тонн. Возле монумента гости города любят делать фотосессии.',
+		image: require('../../assets/images/push.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Дом Джона Юза',
+		category:  "Дома",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/pervy_dom_yuza/201960007571/',
+		shortDescription:
+			'Старинный особняк 1874 года на окраине Донецка, когда то принадлежал Джону Юзу, который основал Юзовку.',
+		longDescription:
+			'Изначально дом был одноэтажным, но в 1880 году по просьбе жены Юз начал строительство второго этажа. Особняк пережил революцию и Великую Отечественную войну. В разные годы дом имел разрушения и затем отстраивался. После смерти отца семья покинула дом. Дом Юза перешел в собственность государства, однако это не спасло особняк от разрушения. Долгие годы исторический памятник не реставрировался и сегодня представляет собой руины.',
+		image: require('../../assets/images/dom.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Дом Нестерова',
+		category:  "Дома",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/dom_nesterova/63825934954/?ysclid=ls7v45pqvd436327868',
+		shortDescription:
+			'В Ленинском районе Донецка по ул.Потийская есть старинный дом Нестерова.',
+		longDescription:
+			'Дом принадлежал дворянской семье Нестеровых и датируется 1889 годом. Нестеровым принадлежали рудники старой Юзовки и 500 гектаров земли. Нестеров первый внес особый вклад в развитие добычи угля. Так в 1889 году дворянин оборудовал свои шахты подъёмными механизмами, тем самым увеличив добычу угля в два раза. В данный момент памятник бесхозный и подлежит реставрации.',
+		image: require('../../assets/images/dom2.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Пальма Мерцалова',
+		category:  "Парки",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/palma_mertsalova/62900269002/?ysclid=ls7v4p50gh301449860',
+		shortDescription:
+			'Архитектурная скульптура копия пальмы А.Мерцалова сделанная кузнецом Каспруком в 1999 году.',
+		longDescription:
+			'В Донецке две копии пальмы одна скульптура на бульваре Пушкина в Ворошиловском районе, а другая копия возле выставочного центра на ул. Челюскинцев.  История создания пальмы началась с 1895 года, когда донецкий мастер Мерцалов изготовил пальму из рельсы без единого шва. Высота скульптуры составляла 3.5 метра и весила 325 кг. Не смотря на то, что пальма сделана при помощи зубила и молота, художественное изделие поразило всех своим реализмом и изяществом.',
+		image: require('../../assets/images/palm.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Монумент "Освободителям Донбасса"',
+		category:  "Искусство",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/tvoim_osvoboditelyam_donbass/113724470418/?ysclid=ls7v5cnpj696875707',
+		shortDescription: 'Монумент «Освободителям Донбасса» открыт в 1984 году.',
+		longDescription:
+			'Расположен в Киевском районе в парке им. Ленинского комсомола. Комплекс посвящен всем солдатам освобождавшим Донбасс от фашистов. Постамент монумента выполнен из черного гранита, а фигуры освободителей сделаны из цветной меди. В 2000 году к монументу были добавлены стелы с фамилиями героев. Перед памятником установлена площадка, на которой разместилась военная техника. Вблизи комплекса установлен колокол весом 850 кг.',
+		image: require('../../assets/images/monum.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Областной художественный музей',
+		category:  "Театры",
+		duration: 'Ср-Вс',
+		distance: '299 KM',
+		weather: '9.00-17.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/donetskiy_respublikanskiy_oblastnoy_khudozhestvenny_muzey/1103893774/',
+		shortDescription:
+			'С 1939 года на бульваре Пушкина открыт Донецкий художественный музей.',
+		longDescription:
+			'В нем собраны уникальные предметы искусства. В галерее хранится 15 тысяч картин великих мастеров, а именно подлинники И. Айвазовского, И. Шишкина, В. Сурикова, Ф. Васильева и др. В музее есть коллекция западного искусства 18 века. Для детей при музее работают студии и мастерские, где юные художники знакомятся с миром искусства.',
+		image: require('../../assets/images/mz.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Музей донецкой Железной дороги',
+		category:  "Театры",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '∞',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/muzey_depo_zheleznoy_dorogi/16552868588/?ysclid=ls7v6mh4vh470937501',
+		shortDescription:
+			'Музей был открыт в 2000 году к празднику железнодорожника.',
+		longDescription:
+			'Старое здание депо при железнодорожном вокзале было переделано под экспозицию. В фонде музея насчитывается около 2 тысяч экспонатов (рукописи 1929 года, аппарат Морзе, форма железнодорожника и др.). В музее насчитывается 25 раритетных паровозов, есть даже состав, на котором ездил маршал Ворошилов.',
+		image: require('../../assets/images/mz2.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Храм Святителя Игнатия',
+		category:  "Соборы",
+		duration: 'Пн-Вс',
+		distance: '299 KM',
+		weather: '8.00-19.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/pravoslavny_khram_svyatitelya_ignatiya_mariupolskogo/13243191195/',
+		shortDescription:
+			'Храм Святителя Игнатия Мариупольского находится на территории завода.',
+		longDescription:
+			'Храм Святителя Игнатия Мариупольского находится на территории Донецкого металлургического завода на ул. Ивана Ткаченко. Торжественное открытие храма было в 2003 году ко дню Металлурга. Смешанный архитектурный стиль хорошо смотрится на фоне города. А раньше на месте церкви была свалка и загрязненная река сейчас это красивое одухотворенное место для молитв. В храме хранится икона Игнатия Мариупольского и ковчег с мощами митрополита Киевского.',
+		image: require('../../assets/images/hram.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Дом Кроля',
+		category:  "Дома",
+		duration: 'Пн-Вс',
+		distance: '5 KM',
+		weather: '8.00-20.00',
+		price: 1000,
+		url: 'https://yandex.ru/maps/org/byvshiy_dom_davida_krolya/32393811012/?ysclid=ls7v8w3hye874364219',
+		shortDescription: 'На ул. Постышева в Донецке сохранился дом Д.Л.Кроля.',
+		longDescription:
+			'Особняк был построен в 1903 году самим купцом. Фасад дома Кроль оформил плиткой своего производства. В девяностых годах дом был разрушен пожаром. А в 2000 году за счет спонсорских денег дом Кроля был восстановлен и внесен в реестр исторического наследия Донбасса. Ныне особняк находится под защитой республики, однако сдается в аренду предпринимателям.',
+		image: require('../../assets/images/crol.jpg'),
+	},
+	{
+		id: 1,
+		title: 'Кованные фигуры',
+		category:  "Парки",
+		duration: 'Пн-Вс',
+		distance: '604 KM',
+		weather: '∞',
+		price: 400,
+		url: 'https://yandex.ru/maps/org/park_kovanykh_figur/236474669636/',
+		shortDescription:
+			'Донецкий парк кованых скульптур. В 2001 году в тенистом сквере были представлены первые скульптуры.',
+		longDescription:
+			'В 2001 году в парке установили первые 9 кованых фигур. В 2002 году — ещё 19 кованых фигур. В 2002 году была установлена «Украинская беседка» и беседка «Четыре дракона». В 2004 году установили «Беседку влюбленных». В 2005 году в парке появилась аллея «Знаки зодиака». Прошел 7-й международный фестиваль кузнечного мастерства.',
+		image: require('../../assets/images/kovani.jpg'),
+	},
 ]
