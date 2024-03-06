@@ -1,6 +1,6 @@
 # Travel-App-React-Native
 
-![Image](screenshots/1.png)
+![Image](screenshots/1.jpg)
 
   
 
