@@ -2,6 +2,8 @@
 
 ![Image](screenshots/1.jpg)
 
+![Image2](screenshots/2.jpg)
+
   
 
 ## Get Started
